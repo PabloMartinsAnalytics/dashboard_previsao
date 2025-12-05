@@ -197,10 +197,10 @@ kpi_dados = [
 app.layout = html.Div(className='main-container', children=[
     html.Div(className='header-container', children=[
         html.Div(className='logo-area', children=[
-            html.Img(src='assets/Hub Logo.png', className='logo-img'),
-            html.Img(src='assets/Logo - Editado.png', className='logo-img'),
-            html.Img(src='assets/tim-25.png', className='logo-img'),
-            html.Img(src='assets/Diretoria Logo.png', className='logo-img'),
+            html.Img(src='assets/Hub Logo 1.png', className='logo-img'),
+            html.Img(src='assets/Logo Prophet.png', className='logo-img'),
+            html.Img(src='assets/Tech.png', className='logo-img'),
+            html.Img(src='assets/Diretoria Logo - Editado - Editado - Editado.png', className='logo-img'),
         ]),
         html.Div(className='title-area', children=[
             html.H1("PROPHET - PREVISÕES", className='main-title'),

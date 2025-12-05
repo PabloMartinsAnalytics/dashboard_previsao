@@ -1,0 +1,35 @@
+
+
+
+click
+colorama
+Flask
+Flask-Login
+Flask-SQLAlchemy
+Flask-WTF
+greenlet
+itsdangerous
+Jinja2
+MarkupSafe
+mysql-connector-python
+protobuf
+SQLAlchemy
+typing_extensions
+Werkzeug
+WTForms
+
+Excelente. Você está de parabéns. Gráficos prontos. Agora, vamos para os outros cards de KPI's. Nós vamos precisar ajustar, pois são 8 cards no total (eu errei na contagem). Nós já temos 3 (se preciso, podemos dividir em 2 linhas, 4 em cada). Agora, vamos adicionar 5 cards. Eles serão calculados com base nas planilhas. 
+
+O 1° a ser adicionado será retenção prevista até o momento. Para calcular ela, precisamos pegar a aba "Mes Atual Real" da planilha que tem a coluna "TOTAL" com o total de roteiros previstos e multiplicar cada dia disponível (no caso, até o momento, tem até dia 13/11) pelo valor previsto. Assim achamos o que era previsto de retidos até o dia disponível. Após isso, vamos dividir a soma desses "RETIDOS" obtidos, pela soma do "TOTAL" disponível.
+
+O 2° será a retenção Meta. Na aba "Previsoes do Modelo" tem uma aba chamada "Meta_diaria" que será multiplicada pelo "TOTAL" da aba "Mes Atual Real" também da mesma forma do anterior, para achar a retenção que deveria estar sendo feita. 
+
+O 3° será a retenção atual mesmo, que é a divisão da soma da coluna "RETIDO" da aba "Mes Atual Real" pelo "TOTAL" da aba "Mes Atual Real" também. 
+
+O 4° é o delta médio entre Real vs Previsto dos dias que já estão disponíveis (até dia 13/11 no momento). Esse delta é assim: Previsto subtraído do Real dia a dia. Depois, pegaremos a média desses valores.
+
+E o 5° será a acurácia atual, calculada da mesma forma da outra acurácia. Verificar onde os dias atuais estão dentro do intervalo de confiança e calcular a porcentagem baseado nos dias disponíveis. 
+
+Esse ajuste deixa responsivo também? Caso seja aberto em diversos tamanhos de tela. 
+
+Pronto. Finalizado até o momento. Muito obrigado. Me tire uma dúvida sobre você. Ali na parte superior, aparece os token usados e esse chat nosso usou 72041 e o total disponível é 1048576. Esses tokens se renovam? Ou se acabar acabou para sempre?
